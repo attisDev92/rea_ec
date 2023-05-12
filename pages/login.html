@@ -9,25 +9,27 @@
 </head>
 <body>
     <nav>
-        <a href="#body-index" title="link-rea" class="barra__logos">
-            <img src="./assets/Logos REA/Rea-blanco.png" alt="REA" id="logo-rea-png">
+        <a href="#body-index" title="link-rea" class="logos">
+            <img src="../assets/Logos REA/Rea-blanco.png" alt="REA" id="logo-rea-png">
         </a>
-        <a href="http://www.creatividad.gob.ec" title="link-ifci" class="barra__logos" target="_blank">
-            <img src="./assets/Logo IFCI/Logos-MCyP-IFCI_GDE.png" alt="IFCI" id="logo-ifci-png">
+        <a href="http://www.creatividad.gob.ec" title="link-ifci" class="logos" target="_blank">
+            <img src="../assets/Logo IFCI/Logos-MCyP-IFCI_GDE.png" alt="IFCI" id="logo-ifci-png">
         </a>
     </nav>
-    <div>
-        <form class="registro__formulario" action="">
+    <div class="contenedor__login">
+        <form class="login__formulario" action="">
             <fieldset>
                 <legend class="formulario__titulo">Ingreso REA</legend>
                 <input type="text" id="usuario" placeholder="Nombre de usuario">
+
                 <input type="password" name="password" id="password" placeholder="Contraseña">
-                <input id="btn-envio'formulario" type="submit" value="Ingresar">
+
+                <input id="btn-ingresar" type="submit" value="Ingresar">
             </fieldset>
         </form>
-        <button id="btn-recuperar-contraseña">¿Olvido la contraseña?</button>
+        <a id="btn-recuperar-password">¿Olvido la contraseña?</a>
         <p>¿Aún no eres parte de REA?</p>
-        <button id="btn-registrarse">Regístrate</button>
+        <a id="btn-registrarse">Regístrate</a>
     </div>
 </body>
 </html>
