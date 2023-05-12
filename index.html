@@ -307,21 +307,33 @@
 				christian.chicaiza@creatividad.gob.ec</p>
 			<a href="#" class="button--contacto">Envía un mensaje</a>
 		</div>
-		<form class="contacto--formulario">
+		<form class="contacto--formulario" action="https://formsubmit.co/christian.chicaiza@creatividad.gob.ec.com" method="POST">
 			<button type="button" id="cerrar-formulario">cerrar</button>
+
 			<fieldset class="formulario__campos">
 				<legend>Formulario de Contactos</legend>
+
 				<label for="nombre">Nombre</label>
-				<input type="text" name="form" id="nombre" placeholder="Nombre">
+				<input type="text" name="Nombre" id="nombre" placeholder="Nombre">
+
 				<label for="apellido">Apellido</label>
-				<input type="text" name="form" id="apellido" placeholder="Apellido">
+				<input type="text" name="Apellido" id="apellido" placeholder="Apellido">
+
 				<label for="celular">Celular</label>
-				<input type="number" name="form" id="celular" placeholder="0999999999" maxlength="10" minlength="10" min="0">
+				<input type="number" name="Celular" id="celular" placeholder="0999999999" maxlength="10" minlength="10" min="0">
+
 				<label for="email">e-mail</label>
-				<input type="email" name="form" id="email" placeholder="name@mail.com">
+				<input type="email" name="mail" id="email" placeholder="name@mail.com">
+
 				<label for="area-mensaje">Mensaje</label>
-				<textarea name="form" id="area-mensaje" cols="30" rows="10">Escriba su mensaje</textarea>
+				<textarea name="mensaje" id="area-mensaje" cols="30" rows="10">Escriba su mensaje</textarea>
+
+				<!-- opciones API submit mail https://formsubmit.co -->
 				<input type="submit" value="Enviar" id="enviar-formulario">
+				<input type="hidden" name="_next" value="www.rea-ec.com">
+				<input type="hidden" name="_subject" value="Consulta desde la web de rea">
+				<input type="hidden" name="_captcha" value="false">
+
 			</fieldset>
 		</form>
 	</footer>
