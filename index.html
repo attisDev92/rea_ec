@@ -3,13 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="AttisDev 92">
+	<meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, React, MySQL">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Red de Espacios Audiovisuales del Ecuador, una red de espacios alternativos dedicados a la difusión y exhibición de obras cinematográficas y a la formación de públicos">
 	<title>REA | Red de Espacios Audiovisuales</title>
-	<link rel="stylesheet" href="./css/styles.css" type="text/css"/>
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous" async></script>
 	<link rel="shortcut icon" href="./assets/Logos REA/isologo-blanco.png" type="image/x-icon">
+	<!-- styles css -->
+	<link rel="stylesheet" href="./css/styles.css" type="text/css"/>
+	<!-- fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<!-- javascript -->
 	<script type="text/javascript" async src="./js/slider_index.js" ></script>
 	<script type="text/javascript" async src="./js/galreia_index.js" ></script>
 	<script type="text/javascript" async src="./js/formulario_contacto.js" ></script>
@@ -18,14 +26,16 @@
 <body id="body-index">
 	<header class="encabezado"> 
 		<!--barra menu-->
-		<div class="encabezado__barra">
-			<a href="#body-index" title="link-rea" class="barra__logos">
-				<img src="./assets/Logos REA/Rea-blanco.png" alt="REA" id="logo-rea-png">
-			</a>
-			<a href="http://www.creatividad.gob.ec" title="link-ifci" class="barra__logos" target="_blank">
-				<img src="./assets/Logo IFCI/Logos-MCyP-IFCI_GDE.png" alt="IFCI" id="logo-ifci-png">
-			</a>
-		</div>
+		<nav class="encabezado__barra container-fluid">
+			<div class="row">
+				<a href="#body-index" title="link-rea" class="barra__logos col-2">
+					<img src="./assets/Logos REA/Rea-blanco.png" alt="REA" id="logo-rea-png">
+				</a>
+				<a href="http://www.creatividad.gob.ec" title="link-ifci" class="barra__logos col-2" target="_blank">
+					<img src="./assets/Logo IFCI/Logos-MCyP-IFCI_GDE.png" alt="IFCI" id="logo-ifci-png">
+				</a>
+			</div>
+		</nav>
 		<div class="contenedor__menu">
 			<a href="#" title="icono-menu" class="button--menu" id="icono-button-menu">
 				<span class="material-symbols-outlined">
@@ -102,8 +112,8 @@
 			</div>
 		</section>
 		<!--beneficios-->
-		<section class="section__beneficios" id="galeria-beneficios">
-			<article class="beneficios__contenedor">
+		<section class="section__beneficios row" id="galeria-beneficios">
+			<article class="beneficios__contenedor col-4">
 				<a href="#" class="beneficios--link">
 					<div class="contenedor__image">
 						<img src="./assets/img/picture_rea_30.jpg" alt="imagen 1" class="contenedor__image--img">
@@ -112,7 +122,7 @@
 					<p class="contenedor__parrafo" style="display: none">Si te certificas como miembro REA o Usuario, puedes acceder a un repositorio audiovisual con más de 60 obras cinematográficas, para realizar eventos gratuitos, dado que el IFCI posee los derechos no exclusivos de exhibición.</p>
 				</a>
 			</article>
-			<article class="beneficios__contenedor" >
+			<article class="beneficios__contenedor col-4">
 				<a href="#" class="beneficios--link">
 					<div class="contenedor__image">
 					  <img src="./assets/img/picture_rea_29.jpg" alt="imagen 2" class="contenedor__image--img">
@@ -121,16 +131,16 @@
 					<p class="contenedor__parrafo" style="display: none">Tendremos reuniones periódicas para brindarte apoyo en la curaduría de tu programación, así como en la gestión de obras externas al Banco de Contenidos.</p>
 				</a>
 			</article>
-			<article class="beneficios__contenedor" >
+			<article class="beneficios__contenedor col-4">
 				<a href="#" class="beneficios--link">
 					<div class="contenedor__image">
-						<img src="./assets/img/picture_rea_19.jpg" alt="imagen 3" class="contenedor__image--img">
+						<img src="./assets/img/picture_rea_18.jpg" alt="imagen 3" class="contenedor__image--img">
 					</div>
 					<h2 class="contenedor__subtitulo">DIFUSIÓN DE PROGRAMACIÓN</h2>
 					<p class="contenedor__parrafo" style="display: none">Promocionaremos tus exhibiciones y eventos en las redes sociales oficiales del IFCI, a fin de que se obtenga mayor alcance de difusión.</p>
 				</a>
 			</article>
-			<article class="beneficios__contenedor" >
+			<article class="beneficios__contenedor col-4">
 				<a href="#" class="beneficios--link">
 					<div class="contenedor__image">
 						<img src="./assets/img/picture_rea_15.jpg" alt="imagen 4" class="contenedor__image--img">
@@ -139,7 +149,7 @@
 					<p class="contenedor__parrafo" style="display: none">Sé parte de los ciclos y muestras organizadas por el IFCI o réplicas de Festivales locales e internacionales aliados.</p>
 				</a>
 			</article>
-			<article class="beneficios__contenedor" >
+			<article class="beneficios__contenedor col-4">
 				<a href="#" class="beneficios--link">
 					<div class="contenedor__image">
 						<img src="./assets/img/picture_rea_23.jpg" alt="imagen 5" class="contenedor__image--img">
@@ -148,7 +158,7 @@
 					<p class="contenedor__parrafo" style="display: none">Contribuimos en la formación para fomentar el desarrollo de espacios y gestores culturales.</p>
 				</a>
 			</article>
-			<article class="beneficios__contenedor" >
+			<article class="beneficios__contenedor col-4">
 				<a href="#" class="beneficios--link">
 					<div class="contenedor__image">
 						<img src="./assets/img/picture_rea_20.jpg" alt="imagen 6" class="contenedor__image--img">
@@ -167,7 +177,7 @@
 	</main>
 	<section id="registro">
 		<div>
-			<p class="registro--intro">Si eres espacio o gestor cultural puedes ser parte de la RED DE ESPACIOS AUDIOVISUALES y acceder a varios beneficios.</p>
+			<p class="registro--intro">Si eres un espacio cultural o gestor cultural puedes ser parte de la RED DE ESPACIOS AUDIOVISUALES y acceder a varios beneficios.</p>
 		</div>
 		<div class="registro__requisitos">
 			<div class="requisitos__titulo">
@@ -177,10 +187,7 @@
 			</div>
 			<div class="requisitos__contenedor">
 				<div class="requisitos__subtitulo">
-					<h3>Personas Naturales</h3>
-					<span class="material-symbols-outlined">
-						more_down
-					</span>                    
+					<h3>Personas Naturales</h3>                  
 				</div>
 				<div class="requisitos__lista">
 					<ul>
@@ -193,9 +200,6 @@
 			<div class="requisitos__contenedor">
 				<div class="requisitos__subtitulo">
 					<h3>Personas Jurídicas</h3>
-					<span class="material-symbols-outlined">
-						more_down
-					</span>  
 				</div>
 				<div class="requisitos__lista">
 					<ul>
@@ -211,10 +215,7 @@
 			</div>
 			<div class="requisitos__contenedor">
 				<div class="requisitos__subtitulo">
-					<h3>Manual de registro</h3>
-					<span class="material-symbols-outlined">
-						more_down
-					</span>  
+					<h3>Manual de registro</h3> 
 				</div>
 				<div class="requisitos__lista">
 					<div class="frame--ppt">
@@ -224,6 +225,7 @@
 				</div>
 			</div>
 		</div>
+		
 		<div class="registro__requisitos">
 			<div class="requisitos__titulo">
 				<h2>Usuarios del Banco de contenidos</h2>
@@ -232,10 +234,7 @@
 			</div>
 			<div class="requisitos__contenedor">
 				<div class="requisitos__subtitulo">
-					<h3>Personas Naturales</h3>
-					<span class="material-symbols-outlined">
-						more_down
-					</span>  
+					<h3>Personas Naturales</h3> 
 				</div>
 				<div class="requisitos__lista">
 					<ul>
@@ -247,10 +246,7 @@
 			</div>
 			<div class="requisitos__contenedor">
 				<div class="requisitos__subtitulo">
-					<h3>Personas Jurídicas</h3>
-					<span class="material-symbols-outlined">
-						more_down
-					</span>  
+					<h3>Personas Jurídicas</h3> 
 				</div>
 				<div class="requisitos__lista">
 					<ul>
@@ -266,9 +262,6 @@
 			<div class="requisitos__contenedor">
 				<div class="requisitos__subtitulo">
 					<h3>Manual de registro</h3>
-					<span class="material-symbols-outlined">
-						more_down
-					</span>  
 				</div>
 				<div class="requisitos__lista">
 					<div class="frame--ppt">
