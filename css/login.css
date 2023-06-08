@@ -42,7 +42,7 @@ nav {
 	height: 100%;
 }
 
-.contenedor__login {
+.contenedor__formulario {
 	background-color: var(--color-gris-claro);
 	margin: 10rem auto;
 	padding: 2em;
@@ -58,8 +58,10 @@ nav {
 	        box-shadow: var(--sombra-box);
 }
 
-.login__formulario {
-
+.texto__formulario {
+	font-family: var(--font-principal);
+    margin: 2em 1em 1em;
+	text-align: center;
 }
 
 .formulario__titulo {
@@ -76,7 +78,7 @@ nav {
 	padding: 2em 1em;
 }
 
-.login__formulario input {
+.login__formulario input:not(.btn) {
 	width: auto;
 	height: 2em;
 	margin: 1em auto;
@@ -89,9 +91,7 @@ nav {
 	        box-shadow: inset -1px -1px 4px 0px black;
 }
 
-#btn-ingresar,
-#btn-recuperar-password,
-#btn-registrarse {
+.btn {
 	width: 12em;
 	height: 2em;
 	margin: 1em auto;
@@ -107,9 +107,7 @@ nav {
 	transition: all 0.3s ease;
 }
 
-#btn-ingresar:hover,
-#btn-recuperar-password:hover,
-#btn-registrarse:hover {
+.btn:hover {
 	color: var(--color-gris-claro);
 	background-color: var(--color-gris-oscuro);
 	-webkit-transform: scale(1.1);
@@ -117,8 +115,16 @@ nav {
 	        transform: scale(1.1);
 }
 
-.contenedor__login p {
-	font-family: var(--font-principal);
-    margin: 2em 1em 1em;
+.notas {
+	margin: auto;
+	font-size: 0.8em;
+	color: var(--color-rojo);
+	font-family: var(--font-tercera);
+	width: 50%;
 	text-align: center;
+}
+
+.texto--autenticar {
+	font-size: 1.5em;
+	margin-block: 5em;
 }

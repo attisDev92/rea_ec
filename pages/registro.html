@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REA | Registro</title>
+    <link rel="stylesheet" href="../css/login.css" type="text/css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#body-index" title="link-rea" class="logos">
+                <img src="../assets/Logos REA/Rea-blanco.png" alt="REA" id="logo-rea-png">
+            </a>
+            <a href="http://www.creatividad.gob.ec" title="link-ifci" class="logos" target="_blank">
+                <img src="../assets/Logo IFCI/Logos-MCyP-IFCI_GDE.png" alt="IFCI" id="logo-ifci-png">
+            </a>
+        </nav>
+    </header>
+    <main class="contenedor__formulario">
+        <form class="login__formulario" action="../pages/registro_usuario_procesar.php" method="post">
+            <fieldset>
+                <legend class="formulario__titulo">Registro de usuario</legend>
+
+                <label for="mail-usuario" class="texto__formulario">Ingrese su correo electrónico
+                    <input type="email" name="mail" id="mail-usuario" placeholder="correo electrónico">
+                </label>
+                <p class="notas">Este mail será la única forma de ingresar a su cuenta de usuario.</p>
+
+                <label for="password" class="texto__formulario">Ingrese su contraseña
+                    <input type="password" name="password" id="password" placeholder="Contraseña">
+                </label>
+                <p class="notas">Debe tener un mínimo de 8 caracteres y como mínimo debe contener un número.</p>
+
+                <input class="btn" type="submit" value="Registrar usuario">
+
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

@@ -16,20 +16,25 @@
             <img src="../assets/Logo IFCI/Logos-MCyP-IFCI_GDE.png" alt="IFCI" id="logo-ifci-png">
         </a>
     </nav>
-    <div class="contenedor__login">
-        <form class="login__formulario" action="">
+    <main class="contenedor__formulario">
+        <form class="login__formulario" action="../pages/login_procesar.php" method="post">
             <fieldset>
                 <legend class="formulario__titulo">Ingreso REA</legend>
-                <input type="text" id="usuario" placeholder="Nombre de usuario">
+
+
+                <input type="text" name="usuario" id="usuario" placeholder="Correo electrónico">
 
                 <input type="password" name="password" id="password" placeholder="Contraseña">
 
-                <input id="btn-ingresar" type="submit" value="Ingresar">
+                <input class="btn" type="submit" value="Ingresar">
+                
             </fieldset>
         </form>
-        <a id="btn-recuperar-password">¿Olvido la contraseña?</a>
-        <p>¿Aún no eres parte de REA?</p>
-        <a id="btn-registrarse">Regístrate</a>
-    </div>
+
+        <a href="../pages/recuperar_pass.html" class="btn">¿Olvido la contraseña?</a>
+        
+        <p class="texto__formulario">¿Aún no eres parte de REA?</p>
+        <a href="../pages/registro.html" class="btn">Regístrate</a>
+    </main>
 </body>
 </html>
