@@ -132,22 +132,24 @@ nav {
 /* formulario registro */
 
 .titulo__registro {
-	margin-top: 2em;
-	margin-inline: 3em;
+	margin: 1em auto;
+	color: var(--color-gris-claro);
+	border: none;
 }
 
 .contenedor__btn--superior {
-	margin: 3em;
+	margin: 1em;
 }
 
 .btn--superior {
 	background-color: var(--color-rojo);
-	box-sizing: border-box;
-	padding: 2em;
-	box-shadow: var(--sombra-box);
-	width: fit-content;
-	height: 15em;
-	margin: 2em;
+    box-sizing: border-box;
+    padding: 2em;
+    box-shadow: var(--sombra-box);
+    width: 50%;
+    height: 15em;
+    margin: 1em 2em;
+	transition: all 0.3s ease;
 }
 
 .btn--superior h2 {
@@ -164,16 +166,57 @@ nav {
 }
 
 .btn--superior:hover {
-	font-size: 1.3em;
-	padding: 0em;
 	background-color: #D3D6DB;
 }
 
 .btn--superior:hover p {
 	display: block;
+	font-size: 1.3em;
 }
 
 .btn--superior:hover h2 {
 	display: none;
 }
 
+.btn--select {
+	height: 8em;
+}
+
+.btn--noselect {
+	display: none;
+}
+
+.btn--atras {
+	height: 7em;
+	margin: 1.5em;
+	padding: 0.5em ;
+	background-color: var(--color-rojo);
+	font-family: var(--font-secundaria);
+	color: var(--color-gris-claro);
+	text-align: center;
+	-webkit-box-shadow: var(--sombra-box);
+	        box-shadow: var(--sombra-box);
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.btn--atras--none {
+	display: none;
+}
+
+.main--select {
+	background-color: var(--color-gris-claro);
+	min-height: 100vh;
+	height: fit-content;
+}
+
+/* formularios registro */
+
+.form__espacios--none {
+	display: none;
+}
+
+.form__espacios {
+	margin-inline: 5em;
+}
