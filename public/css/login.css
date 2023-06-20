@@ -128,3 +128,52 @@ nav {
 	font-size: 1.5em;
 	margin-block: 5em;
 }
+
+/* formulario registro */
+
+.titulo__registro {
+	margin-top: 2em;
+	margin-inline: 3em;
+}
+
+.contenedor__btn--superior {
+	margin: 3em;
+}
+
+.btn--superior {
+	background-color: var(--color-rojo);
+	box-sizing: border-box;
+	padding: 2em;
+	box-shadow: var(--sombra-box);
+	width: fit-content;
+	height: 15em;
+	margin: 2em;
+}
+
+.btn--superior h2 {
+	color: var(--color-gris-claro);
+	font-size: 4em;
+	font-family: var(--font-secundaria);
+
+}
+
+.btn--superior p {
+	display: none;
+	color: var(--color-gris-oscuro);
+	font-family: var(--font-secundaria);
+}
+
+.btn--superior:hover {
+	font-size: 1.3em;
+	padding: 0em;
+	background-color: #D3D6DB;
+}
+
+.btn--superior:hover p {
+	display: block;
+}
+
+.btn--superior:hover h2 {
+	display: none;
+}
+
