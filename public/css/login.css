@@ -13,6 +13,27 @@
 	--color-gris-oscuro: #3A4750;
 }
 
+h1,
+h2 {
+	font-family: var(--font-principal);
+}
+
+h3,
+h4 {
+	font-family: var(--font-secundaria);
+}
+
+p,
+input,
+a,
+label {
+	font-family: var(--font-secundaria);
+}
+
+button {
+	font-family: var(--font-tercera);
+}
+
 body {
 	background-image: -o-linear-gradient(45deg, var(--color-negro), var(--color-gris-oscuro));
 	background-image: linear-gradient(45deg, var(--color-negro), var(--color-gris-oscuro));
@@ -131,6 +152,17 @@ nav {
 
 /* formulario registro */
 
+.header__registro {
+	position: fixed;
+	width: 100%;
+	background-color: var(--color-negro);
+	z-index: 10;
+}
+
+#main-registro {
+	padding-block: 10em;
+}
+
 .titulo__registro {
 	margin: 1em auto;
 	color: var(--color-gris-claro);
@@ -179,7 +211,7 @@ nav {
 }
 
 .btn--select {
-	height: 8em;
+	height: 10em;
 }
 
 .btn--noselect {
@@ -201,6 +233,11 @@ nav {
 	transition: all 0.3s ease;
 }
 
+.btn--atras:hover {
+	color: var(--color-negro);
+	background-color: var(--color-gris-claro);
+}
+
 .btn--atras--none {
 	display: none;
 }
@@ -220,3 +257,70 @@ nav {
 .form__espacios {
 	margin-inline: 5em;
 }
+
+/* btn juridico o narutal */
+
+.contenedor__persona {
+	margin: 2em;
+	width: fit-content;
+	height: fit-content;
+	border: 2px solid var(--color-rojo);
+	border-radius: 2px;
+	font-family: var(--font-secundaria);
+	text-align: center;
+	border-radius: 2px;
+	color: var(--color-gris-claro);
+}
+
+.persona__tipo {
+	width: 10em;
+	height: 3em;
+	background-color: var(--color-negro);
+	padding: 1em 0em;
+	transition: all 0.3s ease;
+}
+
+.persona__tipo:hover {
+	background-color: var(--color-rojo);
+	transform: scale(1.1);
+}
+
+.persona__tipo--active {
+	background-color: var(--color-rojo);
+}
+
+.accordion-body div {
+	padding: 0.5em 1em;
+	border-bottom: 0.05em solid rgba(0, 0, 0, 0.299);
+}
+
+.accordion-body label {
+	margin: 0.5em;
+	text-align: start;
+}
+
+.accordion-body input {
+	box-shadow: inset 0px 0px 5px 0px #343a40cf;
+	height: 2.1em;
+}
+
+.accordion-body textarea {
+	box-shadow: inset 0px 0px 5px 0px #343a40cf;
+	height: 4.5em;
+}
+
+.select-form {
+	box-shadow: 0px 0px 5px 0px #343a40cf;
+	height: 1.7em;
+	border-radius: 10px;
+}
+
+.accordion-body .input-file {
+	box-shadow: none;
+}
+
+
+
+
+
+

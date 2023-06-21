@@ -4,6 +4,8 @@ const mainRegistro = document.getElementById('main-registro');
 const formEspacios = document.getElementById('form-espacios');
 const formUsuario = document.getElementById('form-usuarios');
 
+const btnsPersoneria = document.querySelectorAll('.persona__tipo');
+
 btnsTipoRegistro.forEach(btnRegistro => {
 
     btnRegistro.addEventListener('click', function(e){ 
@@ -32,14 +34,40 @@ btnsTipoRegistro.forEach(btnRegistro => {
     btnAtras.classList.remove('btn--atras--none')
     btnAtras.classList.add('btn--atras');
 
-
     });
 });
 
-btnAtras.addEventListener('click', function(e){
+btnAtras.addEventListener('click',(e) => {
+    const alertaAtras = confirm('Se perderá todo el progreso que hayas realizado. ¿Estás seguro/a de continuar?');
 
-    location.reload();
+    if (alertaAtras) {
+        location.reload();
+    } else {
+        e.preventDefault();
+    }
 
 });
 
+
+//persona natural o juridica
+btnsPersoneria.forEach(btnPersoneria => {
+
+    btnPersoneria.addEventListener('click', function(e) {
+        
+        const alertaAtras = confirm('Se perderá todo el progreso que hayas realizado. ¿Estás seguro/a de continuar?');
+
+        if (alertaAtras) {
+            e.preventDefault();
+
+            btnsPersoneria.forEach(btnPersoneria => {
+                btnPersoneria.classList.remove('persona__tipo--active');
+            });
+            
+            btnPersoneria.classList.add('persona__tipo--active');
+
+        } else {
+            e.preventDefault();
+        }
+    });
+});
 

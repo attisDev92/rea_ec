@@ -11,7 +11,7 @@
     <script src="/public/js/registro.js" type="text/javascript" async ></script>
 </head>
 <body>
-    <header>
+    <header class="header__registro">
         <nav>
             <a href="#body-index" title="link-rea" class="logos">
                 <img src="/public/assets/Logos REA/Rea-blanco.png" alt="REA" id="logo-rea-png">
@@ -42,20 +42,53 @@
         </div>
 
         <form id="form-espacios" class="form__espacios--none" method="post">
+            
+            <h3>¿Eres persona jurídica o persona natural?</h3>
+            <div class="row contenedor__persona">
+                <button class="col-2 persona__tipo persona__tipo--active">
+                    Persona Jurídica
+                </button>
+                <button href="#" class="col-3 persona__tipo">
+                    Persona Natural
+                </button>
+            </div>
 
             <div class="accordion" id="accordionPanelsStayOpenExample">
 
                 <div class="accordion-item">
 
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                  <h2 class="accordion-header encabezado-form">
+                    <button class="accordion-button collapsed encabezado-form" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
                       Información general
                     </button>
                   </h2>
                 
                   <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
                     <div class="accordion-body">
-                    
+                        <div class="row">
+                            <label class="col-2" for="nombre-comercial">Nombre comercial: </label>
+                            <input class="col-3" type="text" id="nombre-comercial" placeholder="Empresa" required>
+                            <label class="col-1" for="ruc">RUC: </label>
+                            <input class="col-3" type="number" id="ruc" placeholder="número de ruc" min="0" minlength="14" maxlength="14" required>
+                        </div>
+                        <div class="row">
+                            <label class="col-4" for="represent_legal">Nombre y apellido representante legal: </label>
+                            <input class="col-4" id="represent_legal" type="text" placeholder="nombre y apellido" required>
+                        </div>
+                        <div class="row">
+                            <label class="col-1" for="direccion">Dirección: </label>
+                            <input class="col-3" id="direccion" type="text" placeholder="calle y numeración" required>
+                        </div>
+                        <div class="row">
+                            <label class="col-1" for="celular">Célular</label>
+                            <input class="col-3" id="celular" type="number" placeholder="0999999999" min="0" required>
+                            <label class="col-1" for="telefono">Teléfono</label>
+                            <input class="col-3" id="telefono" type="number" placeholder="021113333" min="0" required>
+                        </div>
+                        <div class="row">
+                            <label class="col-1" for="mail">Mail</label>
+                            <input class="col-3" id="mail" type="email" placeholder="nombre@mail.com" required>
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -70,7 +103,34 @@
 
                   <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                     <div class="accordion-body">
-                      
+                        <div class="row">
+                            <label class="col-3" for="foto-espacio-1">Fotografía del espacio 1:</label>
+                            <input class="col-8 input-file" required type="file" id="foto-espacio-1">
+                            <label class="col-3" for="foto-espacio-2">Fotografía del espacio 2:</label>
+                            <input class="col-8 input-file" required type="file" id="foto-espacio-2">
+                            <label class="col-3" for="foto-espacio-3">Fotografía del espacio 3:</label>
+                            <input class="col-8 input-file" required type="file" id="foto-espacio-3">
+                        </div>
+                        <div class="row">
+                            <label class="col-2" for="logo-espacio">Logo del espacio:</label>
+                            <input class="col-8 input-file" required type="file" id="logo-espacio">
+                        </div>
+                        <div class="row">
+                            <label class="col-1" for="archivo-ruc">Ruc: </label>
+                            <input class="col-9 input-file" required type="file" id="archivo-ruc">
+                        </div>
+                        <div class="row">
+                            <label class="col-5" for="docu-ubicacion">Documento de ubicación (planilla de servicio básico):</label>
+                            <input class="col-5 input-file" required type="file" id="docu-ubicacion">
+                        </div>
+                        <div class="row">
+                            <label class="col-4" for="nombremiento-representante">Nombramiento del representante legal:</label>
+                            <input class="col-6 input-file" required type="file" id="nombremiento-representante">
+                        </div>
+                        <div class="row">
+                            <label class="col-4" for="docu-autorizacion">Documento de utorización:</label>
+                            <input class="col-6 input-file" required type="file" id="docu-autorizacion">
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -85,15 +145,104 @@
 
                   <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
                     <div class="accordion-body">
-                      
+                        <div class="row">
+                            <label class="col-2" for="nombre-espacio">Nombre del Espacio: </label>
+                            <input class="col-3" type="text" id="nombre-espacio" placeholder="Nombre del espacio" required>
+                        </div>
+                        <div class="row">
+                            <label class="col-2">Tipo de Espacio: </label>
+                            <select class="select-form col-4" name="Tipo de espacio" id="" required>
+                                <option value="">Selecciona el tipo de espacio</option>
+                                <option value="Sala de proyección">Sala de proyección</option>
+                                <option value="Sala de cine">Sala de cine</option>
+                                <option value="Galería">Galería</option>
+                                <option value="Museo">Museo</option>
+                                <option value="Centro cultural">Centro cultural</option>
+                                <option value="Universidad">Universidad</option>
+                                <option value="Auditorio">Auditorio</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label class="col-2" for="direccion-espacio">Dirección: </label>
+                            <input class="col-3" type="text" id="direccion-espacio" placeholder="calle y numeración" required>
+                            <label class="col-2">Provincia: </label>
+                            <select class="select-form col-3" name="Provincia" required>
+                                <option value="">Selecciona una provincia</option>
+                                <option value="azuay">Azuay</option>
+                                <option value="bolivar">Bolívar</option>
+                                <option value="canar">Cañar</option>
+                                <option value="carchi">Carchi</option>
+                                <option value="chimborazo">Chimborazo</option>
+                                <option value="cotopaxi">Cotopaxi</option>
+                                <option value="el-oro">El Oro</option>
+                                <option value="esmeraldas">Esmeraldas</option>
+                                <option value="galapagos">Galápagos</option>
+                                <option value="guayas">Guayas</option>
+                                <option value="imbabura">Imbabura</option>
+                                <option value="loja">Loja</option>
+                                <option value="los-rios">Los Ríos</option>
+                                <option value="manabi">Manabí</option>
+                                <option value="morona-santiago">Morona Santiago</option>
+                                <option value="napo">Napo</option>
+                                <option value="orellana">Orellana</option>
+                                <option value="pastaza">Pastaza</option>
+                                <option value="pichincha">Pichincha</option>
+                                <option value="santa-elena">Santa Elena</option>
+                                <option value="santo-domingo-de-los-tsam">Santo Domingo de los Tsáchilas</option>
+                                <option value="sucumbios">Sucumbíos</option>
+                                <option value="tungurahua">Tungurahua</option>
+                                <option value="zamora-chinchipe">Zamora Chinchipe</option>
+                              </select>
+                            <label class="col-2" for="ciudad-espacio">Ciudad</label>
+                            <input class="col-3" type="text" id="ciudad-espacio" placeholder="ciudad" required>
+                        </div>
+                        <div class="row">
+                            <label class="col-3" for="nombre-responsable">Nombre del responsable: </label>
+                            <input class="col-3" type="text" id="nombre-responsable" placeholder="nombre y apellido" required><br>
+                            <label class="col-3" for="cargo-responsable">Cargo del responsable: </label>
+                            <input class="col-3" type="text" id="cargo-responsable" placeholder="cargo en la institución" required>
+                        </div>
+                        <div class="row">
+                            <label class="col-2" for="mail-espacio">Correo electrónico</label>
+                            <input class="col-3" type="email" id="mail-espacio" placeholder="espacio@mail.com" required>
+                        </div>
+                        <div class="row">
+                            <label class="col-2" for="desripcion-espacio">Descripción</label>
+                            <textarea class="col-7" name="desripcion" id="desripcion-espacio" cols="30" rows="10">Escriba una descripción de las actividades que realiza el espacio.</textarea>
+                        </div>
+                        <div class="row">
+                            <label class="col-2" for="aforo-espacio">Aforo</label>
+                            <input class="col-3" type="number" id="aforo-espacio" min="0" required>
+                            <label class="col-2" for="equipo-espacios">Equio de proyección</label>
+                            <input class="col-3" type="text" id="equipo-espacios" placeholder="pantalla, proyector, TV, etc." required>
+                            <label class="col-2" for="sonido-espacios">Equipo de audio</label>
+                            <input class="col-3" type="text" id="sonido-espacios" placeholder="parlantes, mexclador, bajos, etc." required>
+                            <label class="col-2" for="reproductor-espacios">Tipo de reproductor</label>
+                            <input class="col-3" type="text" id="reproductor-espacios" placeholder="blu ray, dvd, computadora" required>
+                        </div>
+                        <div class="row">
+                            <label class="col-3" for="servicios-espacios">Servicios adisionales</label>
+                            <input class="col-3" type="text" id="servicios-espacios" placeholder="wi-fi, cafetería, tienda, etc." required>
+                        </div>
+                        <div class="row">
+                            <label class="col-3">Espacio público o privado</label>
+                            <select class="select-form col-3" name="Espacio-publico-privado" id="">
+                                <option value="publico">Público</option>
+                                <option value="privado">Privado</option>
+                            </select>
+                        </div>
                     </div>
                   </div>
+                </div>
+  
+                <div>
+                    <p>Completar el registro</p>
+                    <input type="submit" value="Enviar" class="btn">
                 </div>
 
             </div>
 
         </form>
-        
         <form id="form-usuarios" class="form__espacios--none" method="post">
             <h1>prueba</h1>
         </form>
