@@ -7,17 +7,17 @@
     <title>REA | Registro</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" async></script>
-    <link rel="stylesheet" href="/public/css/login.css" type="text/css">
-    <script src="/public/js/registro.js" type="text/javascript" async ></script>
+    <link rel="stylesheet" href="../css/login.css" type="text/css">
+    <script src="../js/registro.js" type="text/javascript" async ></script>
 </head>
 <body>
     <header class="header__registro">
         <nav>
             <a href="#body-index" title="link-rea" class="logos">
-                <img src="/public/assets/Logos REA/Rea-blanco.png" alt="REA" id="logo-rea-png">
+                <img src="../assets/Logos REA/Rea-blanco.png" alt="REA" id="logo-rea-png">
             </a>
             <a href="http://www.creatividad.gob.ec" title="link-ifci" class="logos" target="_blank">
-                <img src="/public/assets/Logo IFCI/Logos-MCyP-IFCI_GDE.png" alt="IFCI" id="logo-ifci-png">
+                <img src="../assets/Logo IFCI/Logos-MCyP-IFCI_GDE.png" alt="IFCI" id="logo-ifci-png">
             </a>
         </nav>
         <h1 class="formulario__titulo titulo__registro">Formulario de Registro</h1>
@@ -104,11 +104,11 @@
                   <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                     <div class="accordion-body">
                         <div class="row">
-                            <label class="col-3" for="foto-espacio-1">Fotografía del espacio 1:</label>
+                            <label class="col-2" for="foto-espacio-1">Fotografía del espacio 1:</label>
                             <input class="col-8 input-file" required type="file" id="foto-espacio-1">
-                            <label class="col-3" for="foto-espacio-2">Fotografía del espacio 2:</label>
+                            <label class="col-2" for="foto-espacio-2">Fotografía del espacio 2:</label>
                             <input class="col-8 input-file" required type="file" id="foto-espacio-2">
-                            <label class="col-3" for="foto-espacio-3">Fotografía del espacio 3:</label>
+                            <label class="col-2" for="foto-espacio-3">Fotografía del espacio 3:</label>
                             <input class="col-8 input-file" required type="file" id="foto-espacio-3">
                         </div>
                         <div class="row">
@@ -116,11 +116,11 @@
                             <input class="col-8 input-file" required type="file" id="logo-espacio">
                         </div>
                         <div class="row">
-                            <label class="col-1" for="archivo-ruc">Ruc: </label>
+                            <label class="col-2" for="archivo-ruc">Ruc: </label>
                             <input class="col-9 input-file" required type="file" id="archivo-ruc">
                         </div>
                         <div class="row">
-                            <label class="col-5" for="docu-ubicacion">Documento de ubicación (planilla de servicio básico):</label>
+                            <label class="col-4" for="docu-ubicacion">Documento de ubicación (planilla de servicio básico):</label>
                             <input class="col-5 input-file" required type="file" id="docu-ubicacion">
                         </div>
                         <div class="row">
@@ -165,7 +165,7 @@
                         <div class="row">
                             <label class="col-2" for="direccion-espacio">Dirección: </label>
                             <input class="col-3" type="text" id="direccion-espacio" placeholder="calle y numeración" required>
-                            <label class="col-2">Provincia: </label>
+                            <label class="col-1">Provincia: </label>
                             <select class="select-form col-3" name="Provincia" required>
                                 <option value="">Selecciona una provincia</option>
                                 <option value="azuay">Azuay</option>
@@ -198,8 +198,8 @@
                         </div>
                         <div class="row">
                             <label class="col-3" for="nombre-responsable">Nombre del responsable: </label>
-                            <input class="col-3" type="text" id="nombre-responsable" placeholder="nombre y apellido" required><br>
-                            <label class="col-3" for="cargo-responsable">Cargo del responsable: </label>
+                            <input class="col-3" type="text" id="nombre-responsable" placeholder="nombre y apellido" required>
+                            <label class="col-1" for="cargo-responsable">Cargo: </label>
                             <input class="col-3" type="text" id="cargo-responsable" placeholder="cargo en la institución" required>
                         </div>
                         <div class="row">
