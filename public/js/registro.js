@@ -48,7 +48,6 @@ btnAtras.addEventListener('click',(e) => {
 
 });
 
-
 //persona natural o juridica
 btnsPersoneria.forEach(btnPersoneria => {
 

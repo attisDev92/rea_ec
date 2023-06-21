@@ -86,7 +86,8 @@ nav {
 }
 
 .formulario__titulo {
-	width: auto;
+	padding: 0em 2em;
+	margin: 1em auto;
 	height: 2em;
 	font-family: var(--font-principal);
 	color:var(--color-rojo);
@@ -95,8 +96,8 @@ nav {
 	border-bottom: 2px solid var(--color-negro);
 }
 
-.login__formulario fieldset {
-	padding: 2em 1em;
+.login__formulario {
+	text-align: center;
 }
 
 .login__formulario input:not(.btn) {
@@ -112,11 +113,18 @@ nav {
 	        box-shadow: inset -1px -1px 4px 0px black;
 }
 
+.contenedor__nuevo-registro {
+	box-shadow: var(--sombra-box);
+	background-color: var(--color-gris-oscuro);
+	text-align: center;
+	color: var(--color-gris-claro);
+}
+
 .btn {
 	width: 12em;
-	height: 2em;
+	height: 2.3em;
 	margin: 1em auto;
-	padding: 0.5em ;
+	padding: 0.3em ;
 	background-color: var(--color-rojo);
 	font-family: var(--font-secundaria);
 	color: var(--color-gris-claro);
@@ -139,7 +147,7 @@ nav {
 .notas {
 	margin: auto;
 	font-size: 0.8em;
-	color: var(--color-rojo);
+	color: var(--color-gris-oscuro);
 	font-family: var(--font-tercera);
 	width: 50%;
 	text-align: center;
@@ -148,6 +156,12 @@ nav {
 .texto--autenticar {
 	font-size: 1.5em;
 	margin-block: 5em;
+}
+
+.alert {
+	font-size: 1em;
+	font-family: var(--font-secundaria);
+	color: var(--color-rojo);
 }
 
 /* formulario registro */
@@ -318,9 +332,3 @@ nav {
 .accordion-body .input-file {
 	box-shadow: none;
 }
-
-
-
-
-
-
